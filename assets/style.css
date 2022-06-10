@@ -1,0 +1,50 @@
+* {
+margin: 0;
+padding: 0;
+}
+
+body{
+    background-image: black;
+    min-height: 100vh;
+}
+
+h1{
+    color: black;
+}
+
+h2{
+    color: white;
+}
+
+.connexion{
+    color: white;
+}
+header{
+    display: flex;
+    background-color: white;
+}
+.navbar-nav{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+#connected{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:center;
+    align-items: center;
+}
+
+.welcome{
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+#containerfoot{
+    display: flex;
+}
