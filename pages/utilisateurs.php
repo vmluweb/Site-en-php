@@ -4,15 +4,20 @@
         <tr>
             <th>Nom d'utilisateur</th>
             <th>Mot de passe</th>
+            <th>Actions</th>
         </tr>
     </thead>
     <tbody>
-<?php
-foreach ($users as $user) {
-    echo "<tr>";
-    echo "<td>".$user['name']."</td><td>".$user['password']."</td>";
-    echo "</tr>";
-}
-?>
-</tbody>
+        <?php
+
+        foreach ($users as $user) {
+            echo "<tr>";
+            echo "<td>" . $user['name'] . "</td><td>" . $user['password'] . "</td>";
+            echo "<td>";
+            echo "<a href='index.php?page=deleteUser&id=" . $user['id'] . "'> Supprimer </a>";
+            echo "</td>";
+            echo "</tr>";
+        }
+        ?>
+    </tbody>
 </table>

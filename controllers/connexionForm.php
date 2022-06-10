@@ -3,33 +3,33 @@
 // Retourne soit l'utilisateur soit faux
 require_once("models/User.php");
 
-function login(string $login, string $pwd)
-{
-    if ($login == "moi" && $pwd == "123") {
-        // je stocke en session l'utilisateur connecté
-        $_SESSION['user'] = $login;
-        setcookie('user', $login);
-        return $login;
-    } else {
-        return false;
-    }
-}
+// function login(string $login, string $pwd)
+// {
+//     if ($login == "moi" && $pwd == "123") {
+//         // je stocke en session l'utilisateur connecté
+//         $_SESSION['user'] = $login;
+//         setcookie('user', $login);
+//         return $login;
+//     } else {
+//         return false;
+//     }
+// }
 
-function loginByUser (string $login, string $pwd){
-    $user = getUserByLogin($login, $pwd);
-   if (isset($user[0])) {
-        $_SESSION['user'] = $user[0]['name'];
-        setcookie('user', $user[0]['name']);
-        return true;
-    } else{
-        return false;
-    }
-}
+// function loginByUser (string $login, string $pwd){
+//     $user = getUserByLogin($login, $pwd);
+//    if (isset($user[0])) {
+//         $_SESSION['user'] = $user[0]['name'];
+//         setcookie('user', $user[0]['name']);
+//         return true;
+//     } else{
+//         return false;
+//     }
+// }
 // Si je suis déjà connecté
 if (isset($_SESSION['user'])) {
     include('pages/connexionFormConfirmation.php');
 } else {
-    $is_logged = loginByUser($_POST['login'], $_POST['password']);
+    $is_logged = getUserByLogin($_POST['login'], $_POST['password']);
 
 
     // Si la connexion est réussie
