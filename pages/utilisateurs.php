@@ -14,7 +14,8 @@
             echo "<tr>";
             echo "<td>" . $user['name'] . "</td><td>" . $user['password'] . "</td>";
             echo "<td>";
-            echo "<a href='index.php?page=deleteUser&id=" . $user['id'] . "'> Supprimer </a>";
+            echo "<a href='index.php?page=utilisateurs&actions=delete&id=" . $user['id'] . "'> Supprimer </a>";
+            echo " | <a href='index.php?page=utilisateurs&actions=update&id=" . $user['id'] . "'> Modifier </a>";
             echo "</td>";
             echo "</tr>";
         }

@@ -37,10 +37,14 @@ if (isset($_GET['page'])) {
         include("controllers/deleteUser.php");
             break;
 
+            case "articles";
+        include("controllers/postController.php");
+            break;
+
         default:
             include("pages/404.php");
             break;
     }
 } else {
-    include('pages/accueil.php');
+    include('controllers/postController.php');
 }

@@ -45,6 +45,12 @@ header{
     justify-content: center;
 }
 
-#containerfoot{
-    display: flex;
+#footerb{
+background-color: purple;
+color: white;
+}
+
+#menub{
+    background-color: purple;
+    color: white;
 }

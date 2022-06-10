@@ -46,3 +46,14 @@
   <img src="assets/html.jpg" class="card-img-bottom" alt="">
 </div>
 </section>
+
+<?php
+var_dump($posts);
+foreach($posts as $post){
+  ?>
+  <div class="row">
+    <h2> <?= $post['title'] ?></h2>
+    <p> <?= $post['content'] ?></p>
+  </div>
+  <?php
+}

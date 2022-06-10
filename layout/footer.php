@@ -1,5 +1,5 @@
 <br>
-<div class="card-fluid" style="width: 18rem;">
+<div class="card-fluid" style="width: 18rem;" id="footerb>
   <div class="card-header">
     Brand
   </div>

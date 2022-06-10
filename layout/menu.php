@@ -1,5 +1,5 @@
 <header>
-    <nav class="navbar navbar-expand-lg bg-light">
+    <nav class="navbar navbar-expand-lg bg-light" id="menub">
   <div class="container-fluid">
     <a class="navbar-brand" href="index.php">Brand</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -18,6 +18,9 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" target="_blank" href="index.php?page=contact">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" target="_blank" href="index.php?page=articles&action=new">Nouvel article</a>
         </li>
         <li class="nav-item" id="connected">
         <?php
